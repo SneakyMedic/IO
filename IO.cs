@@ -16,7 +16,7 @@ namespace yourNamespace
         {
             Directory.Delete(directory);
         }
-        public static string dircheck(string directory)
+        private static string dircheck(string directory)
         {
             if(!(directory==""))
             {
@@ -27,7 +27,7 @@ namespace yourNamespace
                 return "";
             }
         }
-        public static string dirfile(string directory,string file)
+        private static string dirfile(string directory,string file)
         {
             return directory + dircheck(directory) + file;
         }
